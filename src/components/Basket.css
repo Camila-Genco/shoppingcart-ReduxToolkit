@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Nanum+Brush+Script&family=Open+Sans:wght@300&family=Work+Sans&display=swap');
+
+
+.body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .Cart-Container{
+    width: 70%;
+    height: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+   }
+
+   .Header{
+    margin: auto;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 40px;
+    padding-left: 50px;
+   }
+
+   .Heading{
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #2F3841;    
+   }
+
+   .Action{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #2F3841;
+    background-color:  #E44C4C;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 50px;    
+    transition: .45s ease;
+   }
+
+   .Action:hover{
+    transform: scale(1.1);
+   }
+
+   .Cart-Items{
+    margin: auto;
+    width: 90%;
+    height: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   }
+
+   .image-box{
+    width: 15%;
+    text-align: center;
+   }
+
+   .about{
+    height: 100%;
+   }
+
+   .about h1, h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+   }
+
+   .title{
+    padding-top: 5px;
+    line-height: 10px;
+    font-size: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #202020;
+    text-align: start;
+   }
+   .subtitle{
+    line-height: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #909090;
+   }
+
+   .counter{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+
+   .btn{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #202020;
+    background-color: #d9d9d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 900;   
+    cursor: pointer;
+   }
+
+   .count{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    color: #202020;
+    margin-left: 6px;
+    margin-right: 6px;
+   }
+
+   .prices{
+    height: 100%;
+    text-align: right;
+   }
+
+   .amount{
+    padding-top: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    font-weight: 800;
+    color: #202020;
+   }
+
+   .save{
+    padding-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #1687d9;
+    cursor: pointer;
+   }
+
+   .remove{
+    padding-top: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #E44C4C;
+    cursor: pointer;
+   }
+
+   hr{
+    width: 66%;
+    float: right;
+    margin-right: 5%;
+   }
+
+   .checkout{
+    float: right;
+    margin-right: 5%;
+    margin-top: 15px;
+    width: 40%;
+   }
+
+   .total{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .Subtotal{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: #202020;
+    margin-right: 5px;
+   }
+
+   .items{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #909090;
+    line-height: 10px;
+   }
+
+   .total-amount{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 36px;
+    font-weight: 900;
+    color: #202020;
+   }
+
+   .button{
+    margin-top: 5px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
+    color: #202020;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+   }
+
+   .empty{
+    text-align: center;
+    margin-top: 100px;
+    }
+
+    @media screen and (max-width: 768px) {
+        .Cart-Container{
+            width: 90%;
+        }
+        .Cart-Items {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .Cart-Items:last-child{
+            margin-bottom: 30px;
+        }
+        .image-box{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }    
+        .about{
+            height: 100%;
+        }    
+        .about h1, h3{
+            font-size: 25px;
+        }        
+        .about h3{
+            font-size: 18px;
+        }        
+        .title{
+            padding-top: 5px;
+            line-height: 10px;
+            font-size: 32px;
+        }
+        .counter{
+            width: 25%;
+            margin-top: 10px;
+        }    
+        .counter .btn{
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 20px;
+        }    
+        .prices{
+            margin-top: -60px;
+        }    
+        .checkout{
+            display: flex;
+            justify-content: space-evenly;
+            width: 85%;
+            gap: 17px;
+        }    
+        .total-amount{
+            font-size: 24px;
+        }    
+        .Subtotal{
+            margin-right: 5px;
+        }      
+    }
+    
+    @media (max-width: 1024px )  and (min-width: 768px){
+        .Cart-Container{
+            width: 90%;
+        }
+        .Cart-Items{
+            gap: 20px;
+        }
+        .about .title {
+            padding-top: 5px;
+            line-height: 10px;
+            font-size: 25px;
+        }
+        .total-amount{
+            font-size: 28px;
+        }
+        .count{
+            margin-left: 6px;
+            margin-right: 6px;
+        }
+        .Subtotal{
+            margin-right: 10px;
+        }
+        .checkout{
+            width: 40%;
+        }
+    }
+    
